@@ -1,0 +1,16 @@
+1. set up frontend
+2. optional: setup backend with local h2 db
+3. add docker image
+4. optional: add nginx
+5. upload to AWS
+6. optional: AWS reverse proxy for url, serverless backend / AWS db implementation?
+
+-optional: graphql
+
+https://official-joke-api.appspot.com/random_joke
+commands
+ng new ng-video-game-db --style=scss
+ng add @angular/material
+npm i angular-gauge
+ ng serve
+ ng g c search-bar
