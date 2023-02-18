@@ -25,16 +25,16 @@ constructor(
   ngOnInit(): void {
     this.routeSub = this.activatedRoute.params.subscribe((params: Params) => {
       if (params['game-search']) {
-        this.searchGames('metacrit', params['game-search']);
+        this.apiCall('metacrit', params['game-search']);
       } else {
-        this.searchGames('');
+        this.apiCall('');
       }
     });
   }
 
-  searchGames(sort: string, search?: string): void {
+  apiCall(sort: string, search?: string): void {
     this.gameSub = this.httpService
-      .getGameList(sort, search)
+      .getJokes(sort, search)
       .subscribe((gameList: APIResponse<Joke>) => {
         // this.jokes = gameList.results;
         this.setup = gameList.setup;

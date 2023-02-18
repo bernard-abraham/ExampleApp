@@ -27,7 +27,7 @@ constructor(private http: HttpClient) { }
 //   });
 //   }
 
-  getGameList(
+  getJokes(
     ordering: string,
     search?: string
   ): Observable<APIResponse<Joke>> {

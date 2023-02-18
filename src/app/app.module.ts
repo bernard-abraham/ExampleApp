@@ -12,12 +12,20 @@ import { MatSelectModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { InfoboxComponent } from './components/infobox/infobox.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    SidebarComponent,
+    InfoboxComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -28,7 +36,11 @@ import { HttpClientModule } from '@angular/common/http';
     MatSelectModule,
     MatTabsModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSidenavModule,
+    MatSlideToggleModule,
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

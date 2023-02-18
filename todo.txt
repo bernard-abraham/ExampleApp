@@ -14,3 +14,10 @@ ng add @angular/material
 npm i angular-gauge
  ng serve
  ng g c search-bar
+
+
+ 1. set up frontend
+ -add a component box to hold the api call
+ -add a sidebar
+ -add some routing to an info page for the joke
+ -add some angular materials css?
