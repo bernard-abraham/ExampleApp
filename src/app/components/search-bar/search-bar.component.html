@@ -1,12 +1,17 @@
-<div>
+<div class="searchbar">
 <!-- <p> {{setup}}</p>
 <p> {{punchline}}</p> -->
-joke div
+page 1
 <div class="jokes">  
 <ng-container *ngFor="let joke of jokes">
     <p>hi</p>
     <p class="game-name">{{ joke.punchline }}</p>
 </ng-container> 
 </div>
+<!-- <li><a routerLink="/first-component" routerLinkActive="active" ariaCurrentWhenActive="page">First Component</a></li> -->
 
+
+<li><a routerLink="/first-component" routerLinkActive="active" ariaCurrentWhenActive="page">first Component</a></li>
+<li><a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">home</a></li>
 </div>
+<!-- <router-outlet></router-outlet> -->
