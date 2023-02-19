@@ -17,5 +17,5 @@ npm i angular-gauge
 
 
  1. set up frontend
- -add some angular materials css?
+-fix layout & styles to hvae permanent sidebar/header /w search
  -look at directives, ngif, passing data into a component etc...

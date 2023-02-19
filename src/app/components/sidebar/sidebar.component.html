@@ -1,7 +1,22 @@
+<div>
+  <button type="button" mat-button (click)="drawer.toggle()">
+    Toggle sidenav
+  </button>
+
+  <div class="input-group" style="float:right;">
+    <div class="form-outline">
+      <input type="search" id="form1" class="form-control" />
+      <label class="form-label" for="form1">Search</label>
+    </div>
+    <button type="button" class="btn btn-primary">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+
 <mat-drawer-container class="example-container" autosize>
 
-    home
-    <li><a routerLink="/first-component" routerLinkActive="active" ariaCurrentWhenActive="page">First Component</a></li>
+  
+    <!-- <li><a routerLink="/second-component" routerLinkActive="active" ariaCurrentWhenActive="page">First Component</a></li> -->
     <mat-drawer #drawer class="example-sidenav" mode="side">
       <p>Auto-resizing sidenav</p>
       <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
@@ -12,10 +27,11 @@
     </mat-drawer>
   
     <div class="example-sidenav-content">
-      <button type="button" mat-button (click)="drawer.toggle()">
-        Toggle sidenav
-      </button>
+      
+      <router-outlet></router-outlet>
       
     </div>
 
   </mat-drawer-container>
+
+</div>

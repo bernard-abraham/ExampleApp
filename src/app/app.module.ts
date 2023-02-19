@@ -18,6 +18,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {MatCardModule} from '@angular/material/card';
     MatSidenavModule,
     MatSlideToggleModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
