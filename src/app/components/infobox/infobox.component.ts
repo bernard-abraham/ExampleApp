@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./infobox.component.scss']
 })
 export class InfoboxComponent implements OnInit {
-
-  constructor() { }
+  numbers = [1,2];
+  constructor() { 
+    this.numbers = [1,2];
+  }
 
   ngOnInit(): void {
   }
