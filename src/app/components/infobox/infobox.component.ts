@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class InfoboxComponent implements OnInit {
   numbers = [1,2];
   constructor() { 
-    this.numbers = [1,2];
+    this.numbers = [1,2,3,4,5,6];
   }
 
   ngOnInit(): void {

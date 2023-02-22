@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { GaugeModule } from 'angular-gauge';
 import { MatTabsModule } from '@angular/material';
 import { MatIconModule } from '@angular/material';
-import { MatFormFieldModule } from '@angular/material';
 import { MatSelectModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
@@ -19,13 +18,29 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
-
+import { MatExamplesComponent } from './mat-examples/mat-examples.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatButtonModule} from '@angular/material/button';
+import { MatDividerModule } from '@angular/material';
+import { MatExamples2Component } from './mat-examples2/mat-examples2.component';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { ReactiveFormsModule} from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatRippleModule} from '@angular/material/core';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatTableModule} from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
     SearchBarComponent,
     SidebarComponent,
-    InfoboxComponent
+    InfoboxComponent,
+    MatExamplesComponent,
+    MatExamples2Component
     
   ],
   imports: [
@@ -42,7 +57,15 @@ import { MatInputModule } from '@angular/material/input';
     MatSlideToggleModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatInputModule
+    MatInputModule,
+    MatGridListModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatAutocompleteModule,
+    ReactiveFormsModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatPaginatorModule,MatRippleModule,MatSliderModule,MatToolbarModule,MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,8 @@
 <div class="sideheader">
-  <button type="button" mat-button (click)="drawer.toggle()">
-    Toggle sidenav
-  </button>
+    <button mat-button (click)="drawer.toggle()" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+
 
 
   <div class="input-group" style="float:right;">
@@ -18,10 +19,13 @@
 <mat-drawer-container class="example-container" autosize>
 
   
-    <!-- <li><a routerLink="/second-component" routerLinkActive="active" ariaCurrentWhenActive="page">First Component</a></li> -->
+   
     <mat-drawer #drawer class="example-sidenav" mode="side">
       <p>Auto-resizing sidenav</p>
       <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+      <li><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+       <li><a routerLink="/mat-examples" routerLinkActive="active" ariaCurrentWhenActive="page">Angular Materials Examples.</a></li>
+        <li><a routerLink="/mat-examples2" routerLinkActive="active" ariaCurrentWhenActive="page">Angular Materials Examples 2</a></li>
       <button (click)="showFiller = !showFiller" mat-raised-button>
         Toggle extra text
       </button>
