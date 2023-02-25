@@ -1,11 +1,10 @@
 
 
-<div class="infomain">
+<div id="main-boxes">
 
-
-
-  <div *ngFor="let number of numbers">
-<mat-card class="example-card" autosize>
+  <div class="box-div" *ngFor="let number of numbers">
+    <div class="example-card">
+<mat-card autosize>
     <!-- <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>Shiba Inu</mat-card-title>
@@ -28,5 +27,6 @@
       <button mat-button>SHARE</button>
     </mat-card-actions>
   </mat-card>
+</div>
 </div>
 </div>

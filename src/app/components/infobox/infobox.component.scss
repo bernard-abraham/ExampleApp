@@ -1,10 +1,25 @@
 .example-card {
-    max-width: 400px;
-    // max-height: 200px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    background-color: aqua;
+    // max-width: 400px;
+    // // max-height: 200px;
+    // border: 1px solid rgba(0, 0, 0, 0.5);
+    // background-color: aqua;
+    // padding: 1em;
+    // margin: 1em;
+    // width: 280px;
     
+    // height: 330px;
+    // overflow: hidden;
+    // border-radius: 5px;
   }
+
+#main-boxes {
+    // padding: 50px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px; /* space between columns, change as needed */
+    grid-row-gap: 50px; /* space between rows, change as needed */
+}
   
   .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
