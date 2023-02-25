@@ -1,6 +1,6 @@
 <div class="sideheader">
     <button mat-button (click)="drawer.toggle()" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
-      <mat-icon>menu</mat-icon>
+      <mat-icon id="menubutton">menu</mat-icon>
     </button>
 
     Example Webpage
@@ -21,7 +21,9 @@
   
    
     <mat-drawer #drawer class="example-sidenav" mode="side">
-      <p>Auto-resizing sidenav</p>
+      <button mat-button (click)="drawer.toggle()" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+        <mat-icon id="menubutton">menu</mat-icon>
+      </button>
       <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
       <li><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
        <li><a routerLink="/mat-examples" routerLinkActive="active" ariaCurrentWhenActive="page">Angular Materials Examples.</a></li>
